@@ -1,0 +1,54 @@
+body {
+  background: #0d011a;
+  padding: 100px;
+}
+.welcome,
+.home {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.welcome {
+  color: yellow;
+}
+
+.welcome span {
+  -webkit-text-stroke: 1px yellow;
+  color: transparent;
+  padding: 5px;
+  margin-left: -10px;
+}
+
+.welcome span:hover {
+  color: yellow;
+  cursor: pointer;
+  filter: drop-shadow(0 0 1px rgb(248, 248, 199));
+}
+
+.welcome span:has(~ span:hover) {
+  color: yellow;
+  filter: drop-shadow(0 0 1px rgb(248, 248, 199));
+}
+
+.home {
+  color: rgb(0, 42, 255);
+}
+
+.home span {
+  -webkit-text-stroke: 1px blue;
+  color: transparent;
+  padding: 5px;
+  margin-left: -10px;
+}
+
+.home span:hover {
+  color: blue;
+  cursor: pointer;
+  filter: drop-shadow(0 0 1px rgb(248, 248, 199));
+}
+
+.home span:has(~ span:hover) {
+  color: blue;
+  filter: drop-shadow(0 0 1px rgb(248, 248, 199));
+}
